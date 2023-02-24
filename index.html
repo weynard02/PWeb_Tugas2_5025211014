@@ -11,11 +11,13 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
-            margin: 0;
             display: block;
             padding: 20px 20px 20px 20px;
             font-family: 'Century Gothic';
+            width: 90%;
+            margin: auto;
         }
+
         header {
             background-color: rgb(245, 235, 224);
             padding: 10px 10px 10px 10px;
@@ -23,11 +25,10 @@
         }
         header h1 {
             color: rgb(219, 163, 154);
-            font-family: Cabin;
+            font-family: Arial;
             font-weight: bold;
             text-align: center;
             padding: 20px 20px 20px 20px;
-            border: 1px solid black;
         }
         nav {
             clear: both;
@@ -90,14 +91,14 @@
             border-left: 1px solid black;
         }
 
-        aside article {
+        aside .comments article {
             background-color: white;
             padding: 10px 10px 10px 10px;
             border-radius: 25px;
             border: 1px solid black;
         }
 
-        aside article img {
+        aside .comments article img {
             border-radius: 50%;
             display: inline;
         }
@@ -145,6 +146,7 @@
     </script>
 </head>
 <body>
+    <!-- start of header -->
     <header>
         <h1>Warung Peace Soba</h1>
         <nav>
@@ -164,8 +166,11 @@
             </ul>
         </nav>
     </header>
+    <!-- end of header -->
+    <!-- start of container -->
     <a name="menu">
     <div class="container">
+        <!-- start of content menu -->
         <section class="content">
             <article>
                 <figure>
@@ -198,29 +203,41 @@
                 <p>A ramen dish with a broth made of soy sauce.</p>
             </article>
         </section>
+        <!-- end of content menu -->
+        <!-- start of aside -->
         <aside>
-            <h1>Our Reviews</h1>
-            <article>
-                <img src="images/ace.jpg" width="50" height="50">
-                <p id="comment"><b>Ukiyo Ace </b>The Soba is the Star of the Star.</p>
-            </article>
-            <br>
-            <br>
-            <br>
-            <article>
-                <img src="images/neon.jpg" width="50" height="50">
-                <p id="comment"><b>Neon Kurama </b>So delicious!</p>
-            </article>
-            <br>
-            <br>
-            <br>
-            <article>
-                <img src="images/keiwa.jpg" width="50" height="50">
-                <p id="comment"><b>Sakurai Keiwa </b>#1 in the world.</p>
-            </article>
+            <!-- start of comments -->
+            <div class="comments">
+                <h1>Our Reviews</h1>
+                <article>
+                    <img src="images/ace.jpg" width="50" height="50">
+                    <p id="comment"><b>Ukiyo Ace </b>The Soba is the Star of the Star.</p>
+                    <p> <img src="images/star.png" width="10" height="10"/> <b>3.5/5</b> <span style="font-size: 8pt;"> 1000 years ago</span></p>
+                </article>
+                <br>
+                <br>
+                <br>
+                <article>
+                    <img src="images/neon.jpg" width="50" height="50">
+                    <p id="comment"><b>Neon Kurama </b>So delicious!</p>
+                    <p> <img src="images/star.png" width="10" height="10"/> <b>4.5/5</b> <span style="font-size: 8pt;"> 2 days ago</span></p>
+                </article>
+                <br>
+                <br>
+                <br>
+                <article>
+                    <img src="images/keiwa.jpg" width="50" height="50">
+                    <p id="comment"><b>Sakurai Keiwa </b>#1 in the world.</p>
+                    <p> <img src="images/star.png" width="10" height="10"/> <b>5/5</b> <span style="font-size: 8pt;"> 5 hours ago</span></p>
+                </article>
+            </div>
+            <!-- end of comments -->
         </aside>
+        <!-- end of aside -->
     </div>
+    <!-- end of container -->
     </a>
+    <!-- start of contact information -->
     <div id="contact">
         <h3>Our Contact</h3>
         <a href="https://www.instagram.com/weynard01/">
@@ -233,8 +250,11 @@
             <img src="images/WhatsApp.png" width="50" height="50"/>
         </a>
     </div>
+    <!-- end of contact information -->
+    <!-- start of footer -->
     <footer>
         <a href="https://www.youtube.com/channel/UCRP8UfkKSX5yvJu1l06addw"><h4>&copy;2023 weynard02</h4></a>
     </footer>
+    <!-- end of footer -->
 </body>
 </html>
