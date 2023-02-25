@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tugas 2</title>
+    <title>Warung Peace Soba</title>
     <style>
         body {
             background-image: url('images/background.jpg');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
-            display: block;
             padding: 20px 20px 20px 20px;
             font-family: 'Century Gothic';
             width: 90%;
@@ -62,12 +61,12 @@
             clear: both;
             background-color:rgb(254, 252, 243);
             display: flex;
-            overflow: auto;
         }
 
         .content {
             float: left;
             padding-right: 3px;
+            padding-left: 5px;
         }
 
         .content figure {
@@ -86,6 +85,7 @@
         .content article {
             clear: both;
             padding-right: 20px;
+            
         }
 
         figure img {
@@ -115,6 +115,20 @@
         #comment {
             display: inline;
             vertical-align: top;
+        }
+
+        aside .place {
+            padding-bottom: 20px;
+            padding-left: 20px;
+        }
+        aside .place img{
+            border: 1px solid rgb(0, 5, 43);
+            border-radius: 25px;
+        }
+
+        aside .place img:hover {
+            transform: scale(1.1);
+            transition: 0.3s;
         }
 
         #contact {
@@ -211,6 +225,16 @@
                 </hgroup>
                 <p>A ramen dish with a broth made of soy sauce.</p>
             </article>
+            <article>
+                <figure>
+                    <img src="images/yakisoba.jpg" width="250" height="200"/>
+                </figure>
+                <hgroup>
+                    <h2>Yakisoba</h2>
+                    <h3>Rp20.000</h3>
+                </hgroup>
+                <p>A Japanese noodle stir-fried dish.</p>
+            </article>
         </section>
         <!-- end of content menu -->
         <!-- start of aside -->
@@ -241,6 +265,14 @@
                 </article>
             </div>
             <!-- end of comments -->
+            <!-- start of place -->
+            <div class="place">
+                <h1>Our Place</h1>
+                <img src="images/photo1.png" width="400" height="225"/> 
+                <br><br>
+                <img src="images/photo2.png" width="400" height="225"/>
+            </div>
+            <!-- end of place -->
         </aside>
         <!-- end of aside -->
     </div>
