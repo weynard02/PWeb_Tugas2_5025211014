@@ -17,6 +17,9 @@
             margin: auto;
         }
 
+        .wrapper {
+            min-width: 940px;
+        }
         header {
             background-color: rgb(245, 235, 224);
             padding: 10px 10px 10px 10px;
@@ -32,6 +35,7 @@
         }
         nav {
             clear: both;
+            width: auto;
         }
         nav ul {
             margin: 0;
@@ -175,133 +179,135 @@
     </script>
 </head>
 <body>
-    <!-- start of header -->
-    <header>
-        <h1>Warung Peace Soba</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#menu">Menu</a>
-                </li>
-                <li>
-                    <a href="#" onclick="unavailable()">Delivery</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <!-- end of header -->
-    <!-- start of container -->
-    <a name="menu">
-    <div class="container">
-        <!-- start of content menu -->
-        <section class="content">
-            <article>
-                <figure>
-                    <img src="images/tanukisoba.jpeg" width="250" height="200"/>
-                </figure>
-                <hgroup>
-                    <h2>Tanuki Soba <span class="hot">HOT</span></h2> 
-                    <h3>Rp40.000</h3>
-                </hgroup>
-                <p>Hot Soba noodles in soup with Tenkasu fried Tempura batter bits.  It is a Soba dish with a pretty simple topping, but that addition gives the dish richer flavor.</p>
-            </article>
-            <article>
-                <figure>
-                    <img src="images/classicsoba.jpg" width="250" height="200"/>
-                </figure>
-                <hgroup>
-                    <h2>Classic Soba</h2>
-                    <h3>Rp35.000</h3>
-                </hgroup>
-                <p>A thin Japanese noodle made from buckwheat. The noodles are served either chilled with a dipping sauce, or hot in a noodle soup.</p>
-            </article>
-            <article>
-                <figure>
-                    <img src="images/shoyuramen.jpg" width="250" height="200"/>
-                </figure>
-                <hgroup>
-                    <h2>Shoyu Ramen</h2>
-                    <h3>Rp32.000</h3>
-                </hgroup>
-                <p>A ramen dish with a broth made of soy sauce.</p>
-            </article>
-            <article>
-                <figure>
-                    <img src="images/yakisoba.jpg" width="250" height="200"/>
-                </figure>
-                <hgroup>
-                    <h2>Yakisoba</h2>
-                    <h3>Rp20.000</h3>
-                </hgroup>
-                <p>A Japanese noodle stir-fried dish.</p>
-            </article>
-        </section>
-        <!-- end of content menu -->
-        <!-- start of aside -->
-        <aside>
-            <!-- start of comments -->
-            <div class="comments">
-                <h1>Our Reviews</h1>
+    <div class="wrapper">
+        <!-- start of header -->
+        <header>
+            <h1>Warung Peace Soba</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#menu">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="unavailable()">Delivery</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- end of header -->
+        <!-- start of container -->
+        <a name="menu">
+        <div class="container">
+            <!-- start of content menu -->
+            <section class="content">
                 <article>
-                    <img src="images/ace.jpg" width="50" height="50">
-                    <p id="comment"><b>Ukiyo Ace </b>The Soba is the Star of the Star.</p>
-                    <p> <img src="images/star.png" width="10" height="10"/> <b>3.5/5</b> <span style="font-size: 8pt;"> 1000 years ago</span></p>
+                    <figure>
+                        <img src="images/tanukisoba.jpeg" width="250" height="200"/>
+                    </figure>
+                    <hgroup>
+                        <h2>Tanuki Soba <span class="hot">HOT</span></h2> 
+                        <h3>Rp40.000</h3>
+                    </hgroup>
+                    <p>Hot Soba noodles in soup with Tenkasu fried Tempura batter bits.  It is a Soba dish with a pretty simple topping, but that addition gives the dish richer flavor.</p>
                 </article>
-                <br>
-                <br>
-                <br>
                 <article>
-                    <img src="images/neon.jpg" width="50" height="50">
-                    <p id="comment"><b>Neon Kurama </b>So delicious!</p>
-                    <p> <img src="images/star.png" width="10" height="10"/> <b>4.5/5</b> <span style="font-size: 8pt;"> 2 days ago</span></p>
+                    <figure>
+                        <img src="images/classicsoba.jpg" width="250" height="200"/>
+                    </figure>
+                    <hgroup>
+                        <h2>Classic Soba</h2>
+                        <h3>Rp35.000</h3>
+                    </hgroup>
+                    <p>A thin Japanese noodle made from buckwheat. The noodles are served either chilled with a dipping sauce, or hot in a noodle soup.</p>
                 </article>
-                <br>
-                <br>
-                <br>
                 <article>
-                    <img src="images/keiwa.jpg" width="50" height="50">
-                    <p id="comment"><b>Sakurai Keiwa </b>#1 in the world.</p>
-                    <p> <img src="images/star.png" width="10" height="10"/> <b>5/5</b> <span style="font-size: 8pt;"> 5 hours ago</span></p>
+                    <figure>
+                        <img src="images/shoyuramen.jpg" width="250" height="200"/>
+                    </figure>
+                    <hgroup>
+                        <h2>Shoyu Ramen</h2>
+                        <h3>Rp32.000</h3>
+                    </hgroup>
+                    <p>A ramen dish with a broth made of soy sauce.</p>
                 </article>
-            </div>
-            <!-- end of comments -->
-            <!-- start of place -->
-            <div class="place">
-                <h1>Our Place</h1>
-                <img src="images/photo1.png"/> 
-                <br><br>
-                <img src="images/photo2.png"/>
-            </div>
-            <!-- end of place -->
-        </aside>
-        <!-- end of aside -->
-    </div>
-    <!-- end of container -->
-    </a>
-    <!-- start of contact information -->
-    <div id="contact">
-        <h3>Our Contact</h3>
-        <a href="https://www.instagram.com/weynard01/">
-            <img src="images/instagram.png" width="50" height="50"/> 
+                <article>
+                    <figure>
+                        <img src="images/yakisoba.jpg" width="250" height="200"/>
+                    </figure>
+                    <hgroup>
+                        <h2>Yakisoba</h2>
+                        <h3>Rp20.000</h3>
+                    </hgroup>
+                    <p>A Japanese noodle stir-fried dish.</p>
+                </article>
+            </section>
+            <!-- end of content menu -->
+            <!-- start of aside -->
+            <aside>
+                <!-- start of comments -->
+                <div class="comments">
+                    <h1>Our Reviews</h1>
+                    <article>
+                        <img src="images/ace.jpg" width="50" height="50">
+                        <p id="comment"><b>Ukiyo Ace </b>The Soba is the Star of the Star.</p>
+                        <p> <img src="images/star.png" width="10" height="10"/> <b>3.5/5</b> <span style="font-size: 8pt;"> 1000 years ago</span></p>
+                    </article>
+                    <br>
+                    <br>
+                    <br>
+                    <article>
+                        <img src="images/neon.jpg" width="50" height="50">
+                        <p id="comment"><b>Neon Kurama </b>So delicious!</p>
+                        <p> <img src="images/star.png" width="10" height="10"/> <b>4.5/5</b> <span style="font-size: 8pt;"> 2 days ago</span></p>
+                    </article>
+                    <br>
+                    <br>
+                    <br>
+                    <article>
+                        <img src="images/keiwa.jpg" width="50" height="50">
+                        <p id="comment"><b>Sakurai Keiwa </b>#1 in the world.</p>
+                        <p> <img src="images/star.png" width="10" height="10"/> <b>5/5</b> <span style="font-size: 8pt;"> 5 hours ago</span></p>
+                    </article>
+                </div>
+                <!-- end of comments -->
+                <!-- start of place -->
+                <div class="place">
+                    <h1>Our Place</h1>
+                    <img src="images/photo1.png"/> 
+                    <br><br>
+                    <img src="images/photo2.png"/>
+                </div>
+                <!-- end of place -->
+            </aside>
+            <!-- end of aside -->
+        </div>
+        <!-- end of container -->
         </a>
-        <a href="https://www.youtube.com/channel/UCRP8UfkKSX5yvJu1l06addw">
-            <img src="images/yt.png" width="50" height="50"/>
-        </a>
-        <a href="#">
-            <img src="images/WhatsApp.png" width="50" height="50"/>
-        </a>
-    </div>
-    <!-- end of contact information -->
-    <!-- start of footer -->
-    <footer>
-        <a href="https://www.youtube.com/channel/UCRP8UfkKSX5yvJu1l06addw"><h4>&copy;2023 weynard02</h4></a>
-    </footer>
-    <!-- end of footer -->
+        <!-- start of contact information -->
+        <div id="contact">
+            <h3>Our Contact</h3>
+            <a href="#">
+                <img src="images/instagram.png" width="50" height="50"/> 
+            </a>
+            <a href="#">
+                <img src="images/yt.png" width="50" height="50"/>
+            </a>
+            <a href="#">
+                <img src="images/WhatsApp.png" width="50" height="50"/>
+            </a>
+        </div>
+        <!-- end of contact information -->
+        <!-- start of footer -->
+        <footer>
+            <h4>&copy;2023 WPS</h4>
+        </footer>
+        <!-- end of footer -->
+        </div>
 </body>
 </html>
